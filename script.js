@@ -66,5 +66,6 @@ function playGame(roundsNumber) {
     }
 }
 
-playGame(5);
-
+document.getElementById("start-game").addEventListener("click", function() {
+    playGame(5);
+});
