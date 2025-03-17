@@ -60,7 +60,7 @@ function playGame(roundsNumber) {
     if (humanScore > computerScore) {
         console.log(`\n🎉 YOU WIN! 🎉\n-----------------------------\n👤 You: ${humanScore}  |  🤖 Computer: ${computerScore}\n🌟 Congratulations, you're ahead! 🌟\n`);
     } else if (computerScore > humanScore) {
-        cconsole.log(`\n😱 COMPUTER WINS! 😱\n-----------------------------\n👤 You: ${humanScore}  |  🤖 Computer: ${computerScore}\n💥 Better luck next time! 💥\n`);
+        console.log(`\n😱 COMPUTER WINS! 😱\n-----------------------------\n👤 You: ${humanScore}  |  🤖 Computer: ${computerScore}\n💥 Better luck next time! 💥\n`);
     } else {
         console.log(`\n⚖️ IT'S A TIE! ⚖️\n-----------------------------\n👤 You: ${humanScore}  |  🤖 Computer: ${computerScore}\n🌀 It's a close match! Try again! 🌀\n`);
     }
