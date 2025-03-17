@@ -10,3 +10,15 @@ function getRandomInt(max) {
 }
 
 console.log(getComputerChoice());
+
+function getHumanChoice() {
+    let humanChoice = prompt("Please choose 'rock', 'paper', or 'scissors':").toLowerCase();
+    if (humanChoice === "rock" || humanChoice === "paper" || humanChoice === "scissors") {
+        return humanChoice
+    } else {
+        alert("Invalid choice!");
+        return getHumanChoice();
+    }
+}
+
+console.log(getHumanChoice());
