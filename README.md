@@ -1,2 +1,3 @@
 # rock-paper-scissors
-TOP Foundations Project - Rock Paper Scissors Game
+
+This project is to practice the knowledge acquired as part of the Foundations Course of The Odin Project.
