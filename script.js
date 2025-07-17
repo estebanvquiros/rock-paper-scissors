@@ -2,6 +2,9 @@ console.log("Welcome to the Rock Paper Scissors Game!");
 
 const OPTIONS = ["ROCK", "PAPER", "SCISSORS"];
 
+let humanScore = 0;
+let computerScore = 0;
+
 function getComputerChoice() {
     return OPTIONS[Math.floor(Math.random() * 3)];
 }
