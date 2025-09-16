@@ -9,7 +9,7 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-    return prompt("Make your choice:\n\nRock\nPaper\nScissors");
+    return prompt("Make your choice:\n\nRock\nPaper\nScissors").toLowerCase();
 }
 
 function playRound(humanChoice, computerChoice) {
