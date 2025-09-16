@@ -11,3 +11,20 @@ function getComputerChoice() {
 function getHumanChoice() {
     return prompt("Make your choice:\n\nRock\nPaper\nScissors");
 }
+
+function playRound(humanChoice, computerChoice) {
+    console.log(`You: ${humanChoice} | Computer: ${computerChoice}`);
+    if (humanChoice === computerChoice) {
+        console.log(`It's a tie! ${humanChoice} vs ${computerChoice}`);
+    } else if (
+        humanChoice === "rock" && computerChoice === "scissors" ||
+        humanChoice === "scissors" && computerChoice === "paper" ||
+        humanChoice === "paper" && computerChoice === "rock"
+    ) {
+        console.log(`You win! ${humanChoice} beats ${computerChoice}`);
+        humanScore++;
+    } else {
+        console.log(`You lose... ${computerChoice} beats ${humanChoice}`);
+        computerScore++;
+    }
+}
