@@ -9,20 +9,25 @@ function getHumanChoice() {
     return prompt("Make your choice:\n\nRock\nPaper\nScissors").toLowerCase();
 }
 
+const userChoiceResult = document.querySelector("#user-choice");
+const computerChoiceResult = document.querySelector("#computer-choice");
+const roundWinnerOutput = document.querySelector("#round-winner-output");
+
 function playRound(humanChoice, computerChoice) {
-    console.log(`You: ${humanChoice} | Computer: ${computerChoice}`);
+    userChoiceResult.textContent = `You: ${humanChoice}`;
+    computerChoiceResult.textContent = `Computer: ${computerChoice}`;
     if (humanChoice === computerChoice) {
-        console.log(`It's a tie! ${humanChoice} vs ${computerChoice}`);
+        roundWinnerOutput.textContent = "It's a tie!";
         return "tie";
     } else if (
         humanChoice === "rock" && computerChoice === "scissors" ||
         humanChoice === "scissors" && computerChoice === "paper" ||
         humanChoice === "paper" && computerChoice === "rock"
     ) {
-        console.log(`You win! ${humanChoice} beats ${computerChoice}`);
+        roundWinnerOutput.textContent = "You win!";
         return "human";
     } else {
-        console.log(`You lose... ${computerChoice} beats ${humanChoice}`);
+        roundWinnerOutput.textContent = "You lose...";
         return "computer";
     }
 }
