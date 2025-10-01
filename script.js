@@ -1,3 +1,13 @@
+const MAX_ROUNDS = 5;
+
+let humanScore = 0;
+let computerScore = 0;
+let roundsPlayed = 0;
+
+const humanGlobalScore = document.querySelector("#human-score");
+const computerGlobalScore = document.querySelector("#computer-score");
+humanGlobalScore.textContent = "0";
+computerGlobalScore.textContent = "0";
 
 function getComputerChoice() {
     const options = ["Rock", "Paper", "Scissors"];
