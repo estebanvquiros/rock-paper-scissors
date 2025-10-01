@@ -14,7 +14,7 @@ computerChoiceResult.textContent = "Computer: ?";
 
 
 function playRound(humanChoice, computerChoice) {
-    userChoiceResult.textContent = `You: ${humanChoice}`;
+    humanChoiceResult.textContent = `You: ${humanChoice}`;
     computerChoiceResult.textContent = `Computer: ${computerChoice}`;
     if (humanChoice === computerChoice) {
         roundWinnerOutput.textContent = `It's a tie! ${humanChoice} vs ${computerChoice}`;
