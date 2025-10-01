@@ -1,0 +1,9 @@
+#human-display > div {
+    display: flex;
+    gap: 3px;
+}
+
+#computer-display > div {
+    display: flex;
+    gap: 3px;
+}
