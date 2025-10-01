@@ -43,8 +43,8 @@ function playRound(humanChoice, computerChoice) {
 }
 
 
-const options = document.querySelector(".options");
-options.addEventListener("click", (event) => {
+const controls = document.querySelector(".controls");
+controls.addEventListener("click", (event) => {
 
     if (roundsPlayed >= 5) {
         return;
