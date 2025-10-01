@@ -18,7 +18,7 @@ const humanChoiceResult = document.querySelector("#human-choice");
 const computerChoiceResult = document.querySelector("#computer-choice");
 const infoOutput = document.querySelector("#info-output");
 
-infoOutput.textContent = "Let’s play! Round 1 of 5";
+infoOutput.textContent = "Let’s play! Best of 5!";
 humanChoiceResult.textContent = "?";
 computerChoiceResult.textContent = "?";
 
