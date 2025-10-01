@@ -8,6 +8,11 @@ const userChoiceResult = document.querySelector("#human-choice");
 const computerChoiceResult = document.querySelector("#computer-choice");
 const roundWinnerOutput = document.querySelector("#round-winner-output");
 
+roundWinnerOutput.textContent = "Let’s play! Best of five!";
+humanChoiceResult.textContent = "You: ?";
+computerChoiceResult.textContent = "Computer: ?";
+
+
 function playRound(humanChoice, computerChoice) {
     userChoiceResult.textContent = `You: ${humanChoice}`;
     computerChoiceResult.textContent = `Computer: ${computerChoice}`;
