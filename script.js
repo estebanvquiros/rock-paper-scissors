@@ -18,14 +18,14 @@ const humanChoiceResult = document.querySelector("#human-choice");
 const computerChoiceResult = document.querySelector("#computer-choice");
 const infoOutput = document.querySelector("#info-output");
 
-infoOutput.textContent = "Let’s play! Best of five!";
-humanChoiceResult.textContent = "You: ?";
-computerChoiceResult.textContent = "Computer: ?";
+infoOutput.textContent = "Let’s play! Round 1 of 5";
+humanChoiceResult.textContent = "?";
+computerChoiceResult.textContent = "?";
 
 
 function playRound(humanChoice, computerChoice) {
-    humanChoiceResult.textContent = `You: ${humanChoice}`;
-    computerChoiceResult.textContent = `Computer: ${computerChoice}`;
+    humanChoiceResult.textContent = humanChoice;
+    computerChoiceResult.textContent = computerChoice;
     if (humanChoice === computerChoice) {
         infoOutput.textContent = `It's a tie! ${humanChoice} vs ${computerChoice}`;
         return "tie";
