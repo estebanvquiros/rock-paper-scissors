@@ -37,7 +37,7 @@ function playRound(humanChoice, computerChoice) {
         infoOutput.textContent = `You win! ${humanChoice} beats ${computerChoice}`;
         return "human";
     } else {
-        roundWinnerOutput.textContent = `You lose... ${computerChoice} beats ${humanChoice}`;
+        infoOutput.textContent = `You lose... ${computerChoice} beats ${humanChoice}`;
         return "computer";
     }
 }
