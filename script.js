@@ -22,7 +22,7 @@ function playRound(humanChoice, computerChoice) {
         roundWinnerOutput.textContent = `You win! ${humanChoice} beats ${computerChoice}`;
         return "human";
     } else {
-        roundWinnerOutput.textContent = "You lose...";
+        roundWinnerOutput.textContent = `You lose... ${computerChoice} beats ${humanChoice}`;
         return "computer";
     }
 }
