@@ -12,7 +12,7 @@ function playRound(humanChoice, computerChoice) {
     userChoiceResult.textContent = `You: ${humanChoice}`;
     computerChoiceResult.textContent = `Computer: ${computerChoice}`;
     if (humanChoice === computerChoice) {
-        roundWinnerOutput.textContent = "It's a tie!";
+        roundWinnerOutput.textContent = `It's a tie! ${humanChoice} vs ${computerChoice}`;
         return "tie";
     } else if (
         humanChoice === "rock" && computerChoice === "scissors" ||
