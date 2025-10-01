@@ -15,9 +15,9 @@ function playRound(humanChoice, computerChoice) {
         roundWinnerOutput.textContent = `It's a tie! ${humanChoice} vs ${computerChoice}`;
         return "tie";
     } else if (
-        humanChoice === "rock" && computerChoice === "scissors" ||
-        humanChoice === "scissors" && computerChoice === "paper" ||
-        humanChoice === "paper" && computerChoice === "rock"
+        humanChoice === "Rock" && computerChoice === "Scissors" ||
+        humanChoice === "Scissors" && computerChoice === "Paper" ||
+        humanChoice === "Paper" && computerChoice === "Rock"
     ) {
         roundWinnerOutput.textContent = "You win!";
         return "human";
