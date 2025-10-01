@@ -19,7 +19,7 @@ function playRound(humanChoice, computerChoice) {
         humanChoice === "Scissors" && computerChoice === "Paper" ||
         humanChoice === "Paper" && computerChoice === "Rock"
     ) {
-        roundWinnerOutput.textContent = "You win!";
+        roundWinnerOutput.textContent = `You win! ${humanChoice} beats ${computerChoice}`;
         return "human";
     } else {
         roundWinnerOutput.textContent = "You lose...";
