@@ -4,7 +4,7 @@ function getComputerChoice() {
     return options[Math.floor(Math.random()*3)];
 }
 
-const userChoiceResult = document.querySelector("#user-choice");
+const userChoiceResult = document.querySelector("#human-choice");
 const computerChoiceResult = document.querySelector("#computer-choice");
 const roundWinnerOutput = document.querySelector("#round-winner-output");
 
