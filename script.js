@@ -16,7 +16,7 @@ function getComputerChoice() {
 
 const humanChoiceResult = document.querySelector("#human-choice");
 const computerChoiceResult = document.querySelector("#computer-choice");
-const roundWinnerOutput = document.querySelector("#round-winner-output");
+const infoOutput = document.querySelector("#info-output");
 
 roundWinnerOutput.textContent = "Let’s play! Best of five!";
 humanChoiceResult.textContent = "You: ?";
