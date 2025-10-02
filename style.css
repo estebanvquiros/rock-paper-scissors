@@ -2,6 +2,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* outline: 2px solid red; */
+}
+
+body {
+  background-color: #DAF0EE;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Header */
@@ -14,6 +23,7 @@ header {
 }
 
 .title {
+  color: #3B413C;
   font-family: "Caesar Dressing", system-ui;
   font-weight: 400;
   font-size: 62px;
@@ -21,12 +31,74 @@ header {
 
 /* Main */
 
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.dashboard {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  margin: 80px auto 20px auto;
+}
+
+.score-choice-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 170px;
+}
+
+.score {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 0;
+  color: #3B413C;
+}
+
+.choice {
+  font-size: 100px;
+}
+
+.game-info {
+  color: #3B413C;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: 800;
+  margin: 20px auto 20px auto;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  margin: 20px auto 20px auto;
+}
+
+.btn {
+  padding: 10px 25px;
+  font-size: 30px;
+  font-weight: 800;
+  background-color: #9DB5B2;
+  color: #3B413C;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #94D1BE;
+}
 
 
 /* Footer */
 
 footer {
-  font-size: 20px;
+  font-size: 18px;
   padding: 1rem 0;
   display: flex;
   align-items: center;
