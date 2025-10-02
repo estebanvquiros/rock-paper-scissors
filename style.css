@@ -4,6 +4,8 @@
   padding: 0;
 }
 
+/* Header */
+
 header {
     display: flex;
     justify-content: center;
@@ -16,6 +18,12 @@ header {
     font-weight: 400;
     font-size: 62px;
 }
+
+/* Main */
+
+
+
+/* Footer */
 
 footer {
   font-size: 20px;
