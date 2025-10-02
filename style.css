@@ -7,16 +7,16 @@
 /* Header */
 
 header {
-    display: flex;
-    justify-content: center;
-    background-color: #94D1BE;
-    padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  background-color: #94D1BE;
+  padding: 20px 0px;
 }
 
 .title {
-    font-family: "Caesar Dressing", system-ui;
-    font-weight: 400;
-    font-size: 62px;
+  font-family: "Caesar Dressing", system-ui;
+  font-weight: 400;
+  font-size: 62px;
 }
 
 /* Main */
