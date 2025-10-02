@@ -94,6 +94,11 @@ header {
   background-color: #94D1BE;
 }
 
+.btn:active {
+  background-color: #3B413C;
+  color: #DAF0EE;
+}
+
 
 /* Footer */
 
