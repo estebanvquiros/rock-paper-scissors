@@ -4,28 +4,21 @@ let humanScore = 0;
 let computerScore = 0;
 let roundsPlayed = 0;
 
-const humanGlobalScore = document.querySelector("#human-score");
-const computerGlobalScore = document.querySelector("#computer-score");
-humanGlobalScore.textContent = "0";
-computerGlobalScore.textContent = "0";
+const humanGlobalScore = document.querySelector("#humanScore");
+const computerGlobalScore = document.querySelector("#computerScore");
 
 function getComputerChoice() {
     const options = ["Rock", "Paper", "Scissors"];
     return options[Math.floor(Math.random()*3)];
 }
 
-const humanChoiceResult = document.querySelector("#human-choice");
-const computerChoiceResult = document.querySelector("#computer-choice");
-const infoOutput = document.querySelector("#info-output");
-
-infoOutput.textContent = "Let's play! Best of 5!";
-humanChoiceResult.textContent = "?";
-computerChoiceResult.textContent = "?";
-
+const humanChoiceOutput = document.querySelector("#humanChoice");
+const computerChoiceOutput = document.querySelector("#computerChoice");
+const infoOutput = document.querySelector("#gameInfo");
 
 function playRound(humanChoice, computerChoice) {
-    humanChoiceResult.textContent = humanChoice;
-    computerChoiceResult.textContent = computerChoice;
+    humanChoiceOutput.textContent = humanChoice;
+    computerChoiceOutput.textContent = computerChoice;
     if (humanChoice === computerChoice) {
         infoOutput.textContent = `It's a tie! ${humanChoice} vs ${computerChoice}`;
         return "tie";
@@ -53,13 +46,13 @@ controls.addEventListener("click", (event) => {
     const selected = event.target.id;
     let winner;
     switch (selected) {
-        case 'rock':
+        case 'Rock':
             winner = playRound('Rock', getComputerChoice());
             break;
-        case 'paper':
+        case 'Paper':
             winner = playRound('Paper', getComputerChoice());
             break;
-        case 'scissors':
+        case 'Scissors':
             winner = playRound('Scissors', getComputerChoice());
             break;
     }
@@ -67,8 +60,8 @@ controls.addEventListener("click", (event) => {
     if (winner === "human") humanScore++;
     else if (winner === "computer") computerScore++;
 
-    humanGlobalScore.textContent = humanScore.toString();
-    computerGlobalScore.textContent = computerScore.toString();
+    humanGlobalScore.textContent = `You: ${humanScore}`;
+    computerGlobalScore.textContent = `Computer: ${computerScore}`;
 
     roundsPlayed++;
 

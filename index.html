@@ -9,28 +9,27 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Rock Paper Scissors</h1>
-        <div class="game-display">
-            <div id="human-display" class="display">
-                <div>
-                    <p>You:</p>
-                    <p id="human-score"></p>
+        <header>
+            <h1 class="title">Rock Paper Scissors</h1>
+        </header>
+        <div class="main">
+            <div class="dashboard-container">
+                <div class="score-box">
+                    <p id="humanScore">You: 0</p>
+                    <p id="humanChoice">?</p>
                 </div>
-                <p id="human-choice"></p>
-            </div>
-            <div id="computer-display" class="display">
-                <div>
-                    <p>Computer:</p>
-                    <p id="computer-score"></p>
+                <div class="score-box">
+                    <p id="computerScore">Computer: 0</p>
+                    <p id="computerChoice">?</p>
                 </div>
                 <p id="computer-choice"></p>
             </div>
-            <p id="info-output"></p>
-        </div>
-        <div class="controls">
-            <button id="rock">Rock</button>
-            <button id="paper">Paper</button>
-            <button id="scissors">Scissors</button>
+            <p class="game-info" id="gameInfo">Let's play! Best of 5!</p>
+            <div class="controls">
+                <button id="Rock">Rock</button>
+                <button id="Paper">Paper</button>
+                <button id="Scissors">Scissors</button>
+            </div>
         </div>
         <footer>
             <p>Made without ♥️ by me</p>
