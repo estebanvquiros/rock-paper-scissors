@@ -1,5 +1,3 @@
-const MAX_ROUNDS = 5;
-
 let humanScore = 0;
 let computerScore = 0;
 let roundsPlayed = 0;
@@ -67,10 +65,6 @@ function playRound(humanChoice, computerChoice) {
 const controls = document.querySelector(".controls");
 controls.addEventListener("click", (event) => {
 
-    if (roundsPlayed >= 5) {
-        return;
-    }
-
     const selected = event.target.id;
     let winner;
     switch (selected) {
@@ -93,8 +87,9 @@ controls.addEventListener("click", (event) => {
 
     roundsPlayed++;
 
-    if (roundsPlayed >= MAX_ROUNDS) {
+    if (humanScore === 5 || computerScore === 5) {
         declareWinner(humanScore, computerScore);
+        return;
     }
 })
 
