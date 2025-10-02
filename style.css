@@ -1,9 +1,18 @@
-#human-display > div {
-    display: flex;
-    gap: 3px;
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-#computer-display > div {
+header {
     display: flex;
-    gap: 3px;
+    justify-content: center;
+    background-color: #94D1BE;
+    padding: 20px 0px;
+}
+
+.title {
+    font-family: "Caesar Dressing", system-ui;
+    font-weight: 400;
+    font-size: 62px;
 }
