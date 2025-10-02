@@ -95,6 +95,5 @@ controls.addEventListener("click", (event) => {
 
 function declareWinner (humanScore, computerScore) {
     if (humanScore > computerScore) infoOutput.textContent = "The battle is over… and victory is yours! 🏆";
-    else if (humanScore < computerScore) infoOutput.textContent = "You gave it your all… but the game is lost. 🥀";
-    else infoOutput.textContent = "A clash of equals — it’s a tie! ⚔️";
+    else infoOutput.textContent = "You gave it your all… but the game is lost. 🥀";
 }
