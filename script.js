@@ -16,9 +16,37 @@ const humanChoiceOutput = document.querySelector("#humanChoice");
 const computerChoiceOutput = document.querySelector("#computerChoice");
 const infoOutput = document.querySelector("#gameInfo");
 
+function displayChoices(humanChoice, computerChoice) {
+    switch (humanChoice) {
+        case "Rock":
+            humanChoiceOutput.textContent = '✊';
+            break;
+        case "Paper":
+            humanChoiceOutput.textContent = '✋';
+            break;
+        case "Scissors":
+            humanChoiceOutput.textContent = '✌️';
+            break;
+        default:
+            humanChoiceOutput.textContent = '❔';
+    }
+    switch (computerChoice) {
+        case "Rock":
+            computerChoiceOutput.textContent = '✊';
+            break;
+        case "Paper":
+            computerChoiceOutput.textContent = '✋';
+            break;
+        case "Scissors":
+            computerChoiceOutput.textContent = '✌️';
+            break;
+        default:
+            computerChoiceOutput.textContent = '❔';
+    }
+}
+
 function playRound(humanChoice, computerChoice) {
-    humanChoiceOutput.textContent = humanChoice;
-    computerChoiceOutput.textContent = computerChoice;
+    displayChoices(humanChoice, computerChoice);
     if (humanChoice === computerChoice) {
         infoOutput.textContent = `It's a tie! ${humanChoice} vs ${computerChoice}`;
         return "tie";
