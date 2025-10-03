@@ -1,6 +1,5 @@
 let humanScore = 0;
 let computerScore = 0;
-let roundsPlayed = 0;
 
 const humanGlobalScore = document.querySelector("#humanScore");
 const computerGlobalScore = document.querySelector("#computerScore");
@@ -84,8 +83,6 @@ controls.addEventListener("click", (event) => {
 
     humanGlobalScore.textContent = `You: ${humanScore}`;
     computerGlobalScore.textContent = `Computer: ${computerScore}`;
-
-    roundsPlayed++;
 
     if (humanScore === 5 || computerScore === 5) {
         declareWinner(humanScore, computerScore);
