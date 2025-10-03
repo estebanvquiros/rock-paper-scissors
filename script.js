@@ -66,6 +66,8 @@ function playRound(humanChoice, computerChoice) {
 const controls = document.querySelector(".controls");
 controls.addEventListener("click", (event) => {
 
+    if (!event.target.classList.contains('btn')) return;
+
     const selected = event.target.id;
     let winner;
     switch (selected) {
