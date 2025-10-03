@@ -51,6 +51,8 @@ controls.addEventListener("click", (event) => {
     if (!event.target.classList.contains('btn')) return;
 
     const selected = event.target.id;
+    if (!selected) return;
+
     let winner = playRound(selected, getComputerChoice());
 
     if (winner === "human") humanScore++;
