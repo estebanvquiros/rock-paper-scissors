@@ -1,3 +1,5 @@
+const WINNING_SCORE = 5;
+
 let humanScore = 0;
 let computerScore = 0;
 
@@ -84,7 +86,7 @@ controls.addEventListener("click", (event) => {
     humanGlobalScore.textContent = `You: ${humanScore}`;
     computerGlobalScore.textContent = `Computer: ${computerScore}`;
 
-    if (humanScore === 5 || computerScore === 5) {
+    if (humanScore === WINNING_SCORE || computerScore === WINNING_SCORE) {
         declareWinner(humanScore, computerScore);
         return;
     }
