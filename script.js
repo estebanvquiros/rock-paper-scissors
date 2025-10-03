@@ -121,8 +121,8 @@ function enablePlayAgainButton() {
 function restartGame() {
     humanScore = 0;
     computerScore = 0;
-    humanGlobalScore.textContent = humanScore;
-    computerGlobalScore.textContent = computerScore;
+    humanGlobalScore.textContent = `You: ${humanScore}`;
+    computerGlobalScore.textContent = `Computer: ${computerScore}`;
     infoOutput.textContent = "First to 5 wins!";
     humanChoiceOutput.textContent = "❔";
     computerChoiceOutput.textContent = "❔";
