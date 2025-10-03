@@ -1,3 +1,10 @@
+:root {
+  --color-primary: #94D1BE;
+  --color-secondary: #DAF0EE;
+  --color-dark: #3B413C;
+  --color-accent: #9DB5B2;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -5,7 +12,7 @@
 }
 
 body {
-  background-color: #DAF0EE;
+  background-color: var(--color-secondary);
   font-family: "Nunito", sans-serif;
   display: flex;
   flex-direction: column;
@@ -17,12 +24,12 @@ body {
 header {
   display: flex;
   justify-content: center;
-  background-color: #94D1BE;
+  background-color: var(--color-primary);
   padding: 20px 0px;
 }
 
 .title {
-  color: #3B413C;
+  color: var(--color-dark);
   font-family: "Caesar Dressing", system-ui;
   font-weight: 400;
   font-size: 62px;
@@ -55,7 +62,7 @@ header {
   font-size: 20px;
   font-weight: bold;
   padding: 20px 0;
-  color: #3B413C;
+  color: var(--color-dark);
 }
 
 .choice {
@@ -63,7 +70,7 @@ header {
 }
 
 .game-info {
-  color: #3B413C;
+  color: var(--color-dark);
   padding: 20px;
   font-size: 30px;
   font-weight: 800;
@@ -83,19 +90,19 @@ header {
   padding: 10px 25px;
   font-size: 30px;
   font-weight: 800;
-  background-color: #9DB5B2;
-  color: #3B413C;
+  background-color: var(--color-accent);
+  color: var(--color-dark);
   cursor: pointer;
   border-radius: 5px;
 }
 
 .btn:hover {
-  background-color: #94D1BE;
+  background-color: var(--color-primary);
 }
 
 .btn:active {
-  background-color: #3B413C;
-  color: #DAF0EE;
+  background-color: var(--color-dark);
+  color: var(--color-secondary);
 }
 
 
@@ -107,6 +114,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #3B413C;
-  color: #FFFFFF;
+  background-color: var(--color-dark);
+  color: var(--color-secondary);
 }
