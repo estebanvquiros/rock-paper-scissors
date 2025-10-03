@@ -16,32 +16,14 @@ const computerChoiceOutput = document.querySelector("#computerChoice");
 const infoOutput = document.querySelector("#gameInfo");
 
 function displayChoices(humanChoice, computerChoice) {
-    switch (humanChoice) {
-        case "Rock":
-            humanChoiceOutput.textContent = '✊';
-            break;
-        case "Paper":
-            humanChoiceOutput.textContent = '✋';
-            break;
-        case "Scissors":
-            humanChoiceOutput.textContent = '✌️';
-            break;
-        default:
-            humanChoiceOutput.textContent = '❔';
+    const emojis = {
+        'Rock' : '✊',
+        'Paper' : '✋',
+        'Scissors' : '✌️'
     }
-    switch (computerChoice) {
-        case "Rock":
-            computerChoiceOutput.textContent = '✊';
-            break;
-        case "Paper":
-            computerChoiceOutput.textContent = '✋';
-            break;
-        case "Scissors":
-            computerChoiceOutput.textContent = '✌️';
-            break;
-        default:
-            computerChoiceOutput.textContent = '❔';
-    }
+
+    humanChoiceOutput.textContent = emojis[humanChoice] || '❔';
+    computerChoiceOutput.textContent = emojis[computerChoice] || '❔';
 }
 
 function playRound(humanChoice, computerChoice) {
