@@ -93,4 +93,35 @@ controls.addEventListener("click", (event) => {
 function declareWinner (humanScore, computerScore) {
     if (humanScore > computerScore) infoOutput.textContent = "The battle is over… and victory is yours! 🏆";
     else infoOutput.textContent = "You gave it your all… but the game is lost. 🥀";
+    
+    const gameButtons = document.querySelectorAll(".btn");
+    gameButtons.forEach(btn => btn.style.display = "none");
+
+    enablePlayAgainButton();
+}
+
+function enablePlayAgainButton() {
+    const playAgainButton = document.createElement("div");
+    playAgainButton.textContent = "Play again";
+    playAgainButton.classList.add("btn");
+    controls.appendChild(playAgainButton);
+
+    playAgainButton.addEventListener("click", () => {
+        restartGame();
+        playAgainButton.remove();
+
+        const gameButtons = document.querySelectorAll(".btn");
+        gameButtons.forEach(btn => btn.style.display = "flex");
+    })
+
+}
+
+function restartGame() {
+    humanScore = 0;
+    computerScore = 0;
+    humanGlobalScore.textContent = humanScore;
+    computerGlobalScore.textContent = computerScore;
+    infoOutput.textContent = "First to 5 wins!";
+    humanChoiceOutput.textContent = "❔";
+    computerChoiceOutput.textContent = "❔";
 }
