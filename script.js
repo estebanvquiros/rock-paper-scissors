@@ -69,18 +69,7 @@ controls.addEventListener("click", (event) => {
     if (!event.target.classList.contains('btn')) return;
 
     const selected = event.target.id;
-    let winner;
-    switch (selected) {
-        case 'Rock':
-            winner = playRound('Rock', getComputerChoice());
-            break;
-        case 'Paper':
-            winner = playRound('Paper', getComputerChoice());
-            break;
-        case 'Scissors':
-            winner = playRound('Scissors', getComputerChoice());
-            break;
-    }
+    let winner = playRound(selected, getComputerChoice());
 
     if (winner === "human") humanScore++;
     else if (winner === "computer") computerScore++;
